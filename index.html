@@ -10,6 +10,7 @@
   :root{
     --purple-1:#7c3aed; --purple-2:#5b21b6; --purple-3:#4c1d95;
     --red-1:#ef4444; --red-2:#dc2626; --red-3:#991b1b;
+    --yellow-1:#eed671; --yellow-2:#e6c94a; --yellow-ink:#7a5c05;
     --ink:#1f2430; --paper:#f6f5f9;
   }
   body{
@@ -24,6 +25,8 @@
   .grad-red{ background-image: linear-gradient(135deg, var(--red-1), var(--red-2) 55%, var(--red-3)); }
   .grad-purple-soft{ background-image: linear-gradient(135deg, #f3e8ff, #ede9fe); }
   .grad-red-soft{ background-image: linear-gradient(135deg, #fee2e2, #fef2f2); }
+  .grad-yellow{ background-image: linear-gradient(135deg, var(--yellow-1), var(--yellow-2) 60%, var(--yellow-1)); }
+  .grad-yellow-soft{ background-image: linear-gradient(135deg, rgba(238,214,113,.30), #ffffff 65%); }
 
   .badge-num{
     width:2.1rem;height:2.1rem;border-radius:.6rem;
@@ -383,7 +386,7 @@
         </div>
         <div class="grid grid-cols-[auto_1fr] gap-3 px-6 py-3 items-center">
           <div class="flex items-center gap-2 text-purple-700 font-bold text-sm w-32"><i class="fa-solid fa-chart-column"></i>Compra</div>
-          <span class="text-sm text-gray-700">CPM, CPC, CPV.</span>
+          <span class="text-sm text-gray-700">CPM, CPC, CPV, CPE.</span>
         </div>
         <div class="grid grid-cols-[auto_1fr] gap-3 px-6 py-3 items-center">
           <div class="flex items-center gap-2 text-purple-700 font-bold text-sm w-32"><i class="fa-solid fa-arrow-trend-up"></i>Foco</div>
@@ -425,6 +428,50 @@
           <div class="flex items-center gap-2 text-red-600 font-bold text-sm w-32"><i class="fa-solid fa-database"></i>Base</div>
           <span class="text-sm text-gray-700">Otimização contínua.</span>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PIXEL ROADS ================= -->
+  <section class="rounded-3xl shadow-xl border overflow-hidden card-hover" style="border-color:#eed671;">
+    <div class="grad-yellow px-6 py-5 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <i class="fa-solid fa-table-cells text-2xl icon-pop" style="color:var(--yellow-ink);"></i>
+        <h2 class="text-xl sm:text-2xl lg:text-3xl font-extrabold tracking-tight" style="color:var(--yellow-ink);">PIXEL ROADS</h2>
+      </div>
+      <span class="text-[11px] font-bold tracking-wider px-3 py-1 rounded-full bg-white/70" style="color:var(--yellow-ink);">SAAS · MÍDIA PROGRAMÁTICA</span>
+    </div>
+
+    <div class="grad-yellow-soft p-5 sm:p-6 space-y-5">
+      <p class="text-sm sm:text-[15px] text-gray-700 leading-relaxed max-w-3xl">
+        Plataforma SaaS de mídia programática que atende <strong>DV360</strong>, <strong>vídeo programático (YouTube)</strong>
+        e <strong>Taboola</strong>, incluindo <strong>Native 3.0</strong> — anúncios nativos e automatizados criados dentro
+        da própria plataforma — e conta com conectores nativos para <strong>Meta Ads</strong> e <strong>Google Ads</strong>.
+      </p>
+
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+        <div class="rounded-2xl bg-white/80 border p-4 text-center card-hover" style="border-color:#f2e2a1;">
+          <i class="fa-solid fa-display text-xl icon-pop" style="color:var(--yellow-ink);"></i>
+          <p class="mt-2 text-sm font-bold text-gray-800">DV360</p>
+        </div>
+        <div class="rounded-2xl bg-white/80 border p-4 text-center card-hover" style="border-color:#f2e2a1;">
+          <i class="fa-brands fa-youtube text-xl icon-pop" style="color:var(--yellow-ink);"></i>
+          <p class="mt-2 text-sm font-bold text-gray-800">Vídeo Programático (YouTube)</p>
+        </div>
+        <div class="rounded-2xl bg-white/80 border p-4 text-center card-hover" style="border-color:#f2e2a1;">
+          <i class="fa-solid fa-newspaper text-xl icon-pop" style="color:var(--yellow-ink);"></i>
+          <p class="mt-2 text-sm font-bold text-gray-800">Taboola</p>
+        </div>
+        <div class="rounded-2xl bg-white/80 border p-4 text-center card-hover" style="border-color:#f2e2a1;">
+          <i class="fa-solid fa-table-cells text-xl icon-pop" style="color:var(--yellow-ink);"></i>
+          <p class="mt-2 text-sm font-bold text-gray-800">Native 3.0</p>
+        </div>
+      </div>
+
+      <div class="rounded-2xl bg-white/80 border p-4 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8" style="border-color:#f2e2a1;">
+        <span class="text-xs font-bold tracking-wider text-gray-500">CONECTORES NATIVOS</span>
+        <div class="flex items-center gap-2 font-bold text-sm text-gray-800"><i class="fa-brands fa-meta" style="color:var(--yellow-ink);"></i>Meta Ads</div>
+        <div class="flex items-center gap-2 font-bold text-sm text-gray-800"><i class="fa-brands fa-google" style="color:var(--yellow-ink);"></i>Google Ads</div>
       </div>
     </div>
   </section>
