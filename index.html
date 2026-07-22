@@ -368,25 +368,14 @@
   </div>
 
   <!-- ================= COMPARATIVO ================= -->
-  <section class="rounded-3xl shadow-xl border border-gray-200 overflow-hidden">
-    <div class="relative grid grid-cols-1 lg:grid-cols-2">
-      <!-- VS circle -->
-      <div class="hidden lg:flex vs-circle absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-20 w-20 h-20 rounded-full bg-gray-900 items-center justify-center">
-        <span class="text-white font-black text-xl tracking-wide">VS</span>
-      </div>
-      <p class="lg:hidden text-center font-black text-2xl py-3 bg-gray-900 text-white">COMPARATIVO</p>
+  <section class="grid grid-cols-1 lg:grid-cols-[1fr_auto_1fr] gap-4 lg:gap-6 items-stretch">
 
-      <!-- Purple side -->
-      <div class="grad-purple px-6 py-4 hidden lg:flex items-center justify-between lg:col-span-1">
+    <!-- Purple card -->
+    <div class="rounded-3xl shadow-xl border border-purple-200 overflow-hidden card-hover">
+      <div class="grad-purple px-6 py-4 flex items-center justify-between">
         <h3 class="text-white text-xl font-extrabold">MÍDIA PROGRAMÁTICA</h3>
         <i class="fa-solid fa-chart-line text-white text-2xl"></i>
       </div>
-      <div class="grad-red px-6 py-4 hidden lg:flex items-center justify-between lg:col-span-1">
-        <h3 class="text-white text-xl font-extrabold">MÍDIA PERFORMANCE</h3>
-        <i class="fa-solid fa-bullseye text-white text-2xl"></i>
-      </div>
-
-      <!-- rows -->
       <div class="divide-y divide-purple-100 bg-purple-50/30">
         <div class="grid grid-cols-[auto_1fr] gap-3 px-6 py-3 items-center">
           <div class="flex items-center gap-2 text-purple-700 font-bold text-sm w-32"><i class="fa-solid fa-circle-check"></i>Objetivo</div>
@@ -404,6 +393,20 @@
           <div class="flex items-center gap-2 text-purple-700 font-bold text-sm w-32"><i class="fa-solid fa-database"></i>Base</div>
           <span class="text-sm text-gray-700">Dados + Automação.</span>
         </div>
+      </div>
+    </div>
+
+    <!-- VS -->
+    <div class="hidden lg:flex vs-circle self-center items-center justify-center w-20 h-20 rounded-full bg-gray-900 shrink-0">
+      <span class="text-white font-black text-xl tracking-wide">VS</span>
+    </div>
+    <p class="lg:hidden text-center font-black text-2xl py-3 bg-gray-900 text-white rounded-2xl">COMPARATIVO</p>
+
+    <!-- Red card -->
+    <div class="rounded-3xl shadow-xl border border-red-200 overflow-hidden card-hover">
+      <div class="grad-red px-6 py-4 flex items-center justify-between">
+        <h3 class="text-white text-xl font-extrabold">MÍDIA PERFORMANCE</h3>
+        <i class="fa-solid fa-bullseye text-white text-2xl"></i>
       </div>
       <div class="divide-y divide-red-100 bg-red-50/30">
         <div class="grid grid-cols-[auto_1fr] gap-3 px-6 py-3 items-center">
